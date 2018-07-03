@@ -4,3 +4,5 @@ en:
   themes:
     default:
       hello: Hello world!
+      subscribe:
+        title: "Hello world!"
