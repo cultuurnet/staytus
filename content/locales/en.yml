@@ -3,6 +3,12 @@ en:
   # override anything.
   themes:
     default:
-      hello: Hello world!
       subscribe:
         title: "Hello world!"
+        intro: "Hello world!"
+      history:
+        title: "Hello world!"
+        intro: "Hello world!"
+      last_updated:  "Hello world!"
+      due_to_start: "Hello world!"
+      due_to_finish: "Hello world!"
