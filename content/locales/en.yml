@@ -4,11 +4,11 @@ en:
   themes:
     default:
       subscribe:
-        title: "Hello world!"
-        intro: "Hello world!"
+        title: "Schrijf je hier in voor onze updates"
+        intro: "Vul je e-mailadres in en ontvang een e-mailnotificatie bij het wijzigen van een service-status "
       history:
-        title: "Hello world!"
-        intro: "Hello world!"
-      last_updated:  "Hello world!"
-      due_to_start: "Hello world!"
-      due_to_finish: "Hello world!"
+        title: "Historiek van issues & geplande onderhouden"
+        intro: "Hier vind je een oplijsting van de huidige en voorbije issues en onderhoudssessies"
+      last_updated:  "Laatst bijgewerkt"
+      due_to_start: "Geplande start"
+      due_to_finish: "Gepland einde"
