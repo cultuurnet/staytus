@@ -5,7 +5,7 @@
   <div class='container'>
   <% unless @maintenance.services.empty? %>
     <div class='issueDetail__services'>
-      <p>Affected services:</p>
+      <p>Betrokken services:</p>
       <ul>
         <% @maintenance.services.each do |service| %>
         <li><%= service.name %></li>
@@ -15,14 +15,14 @@
   <% end %>
 
   <h1 class='issueDetail__title'><%= @maintenance.title %></h1>
-  <p class='issueDetail__date'>Scheduled for <%= @maintenance.start_at.strftime("%A #{@maintenance.start_at.day.ordinalize} %B %Y at %H:%M (#{site.time_zone})") %></p>
-  <p class='issueDetail__descriptionTitle'>Schedule/description of work</p>
+  <p class='issueDetail__date'>Gepland op <%= @maintenance.start_at.strftime("%A #{@maintenance.start_at.day.ordinalize} %B %Y om %H:%M (#{site.time_zone})") %></p>
+  <p class='issueDetail__descriptionTitle'>Omschrijving</p>
   <p class='issueDetail__description'><%= @maintenance.description %></p>
 
   <dl class='issueDetail__details'>
-    <dt>Scheduled start time</dt>
+    <dt>Geplande starttijd</dt>
     <dd><%= @maintenance.start_at.to_s(:long) %></dd>
-    <dt>Duration</dt>
+    <dt>Duur</dt>
     <dd><%= @maintenance.length_in_minutes_as_string %></dd>
     <dt>Status</dt>
     <dd><%= maintenance_status_tag @maintenance.status %></dd>
@@ -39,7 +39,7 @@
         <%= update.text %>
       </p>
       <p class='issueUpdates__meta'>
-        Posted <%= time_tag update.created_at%>
+        Gemeld op <%= time_tag update.created_at%>
         <% if update.user %>by <%= update.user.name %><% end %>
       </p>
     </div>
