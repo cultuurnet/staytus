@@ -7,9 +7,10 @@ en:
         title: "Schrijf je hier in voor onze updates"
         intro: "Vul je e-mailadres in en ontvang een e-mailnotificatie bij het wijzigen van een service-status "
       history:
-        title: "Historiek van issues & geplande onderhouden"
-        intro: "Hier vind je een oplijsting van de huidige en voorbije issues en onderhoudssessies"
+        title: "Historiek van issues"
+        intro: "Hier vind je een oplijsting van de huidige en voorbije issues & onderhoudssessies"
+        itemDate: " "
       last_updated:  "Laatst bijgewerkt"
       due_to_start: "Geplande start"
       due_to_finish: "Gepland einde"
-      itemDate: " "
+        
