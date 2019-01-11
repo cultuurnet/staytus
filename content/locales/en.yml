@@ -4,8 +4,8 @@ en:
   themes:
     default:
       subscribe:
-        title: "Schrijf je hier in voor onze updates"
-        intro: "Vul je e-mailadres in en ontvang een e-mailnotificatie bij het wijzigen van een service-status "
+        title: "Blijf op de hoogte"
+        intro: "Vul je e-mailadres in en ontvang een e-mailnotificatie bij het wijzigen van de status van één van onze services "
       history:
         title: "Historiek van issues"
         intro: "Hier vind je een oplijsting van de huidige en voorbije issues & onderhoudssessies"
