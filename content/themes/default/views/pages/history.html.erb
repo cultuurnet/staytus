@@ -19,7 +19,7 @@
         </p>
         <p class='history__itemTitle'>
           <a href='<%= item.link %>'><%= item.title %></a>
-          <span class='history__itemDate'><%= t('themes.default.history.itemDate', :default => 'from'.html_safe) %><%= item.date.to_date.to_s(:long) %></span>
+          <span class='history__itemDate'><%= t('themes.default.history.itemDate', :default => 'from'.html_safe) %> <%= item.date.to_date.to_s(:long) %></span>
         </p>
       </div>
       <% end %>
