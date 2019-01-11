@@ -1,4 +1,4 @@
-<% @page_title = 'Welcome' %>
+<% @page_title = 'Welkom' %>
 
 <header class='siteHeader <% if site.cover_image %>has-coverImage<% end %>' <% if site.cover_image%>style='background-image:url(<%= site.cover_image.path %>)'<% end%>>
   <% if site.logo %>
@@ -7,7 +7,7 @@
 
   <% if site.allow_subscriptions? %>
   <p class='siteHeader__subscribe'>
-    <a class='siteHeader__button' href='/subscribe'>Subscribe</a>
+    <a class='siteHeader__button' href='/subscribe'>Schrijf je in</a>
   </p>
   <% end %>
 
@@ -35,7 +35,7 @@
   <section class='ongoingIssues'>
     <% @maintenances.each do |maintenance| %>
     <a href='/maintenance/<%= maintenance.identifier %>' class='issueBanner issueBanner--maintenance'>
-      <p class='issueBanner__state'><%= t("themes.default.maintenance", :default => 'Maintenance') %></p>
+      <p class='issueBanner__state'><%= t("themes.default.maintenance", :default => 'Gepland onderhoud') %></p>
       <h2><%= maintenance.title %></h2>
       <% if maintenance.started? %>
       <p class='issueBanner__time'><%= t("themes.default.due_to_finish", :default => 'due to finish') %> <%= distance_of_time_in_words_to_now_with_direction maintenance.finish_at %></p>
