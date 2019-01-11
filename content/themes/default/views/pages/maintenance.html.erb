@@ -20,7 +20,7 @@
   <p class='issueDetail__description'><%= @maintenance.description %></p>
 
   <dl class='issueDetail__details'>
-    <dt>Geplande starttijd</dt>
+    <dt>Starttijd</dt>
     <dd><%= @maintenance.start_at.to_s(:long) %></dd>
     <dt>Duur</dt>
     <dd><%= @maintenance.length_in_minutes_as_string %></dd>
