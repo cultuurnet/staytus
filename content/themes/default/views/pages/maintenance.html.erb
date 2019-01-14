@@ -39,7 +39,7 @@
         <%= update.text %>
       </p>
       <p class='issueUpdates__meta'>
-        Gemeld op <%= time_tag update.created_at%>
+        Gemeld <%= time_tag update.created_at%>
         <% if update.user %>door <%= update.user.name %><% end %>
       </p>
     </div>
