@@ -5,7 +5,7 @@ en:
     default:
       subscribe:
         title: "Blijf op de hoogte"
-        intro: "Vul je e-mailadres in en ontvang een bericht bij het wijzigen van de status van één van onze services "
+        intro: ""
       history:
         title: "Historiek van issues"
         intro: "Hier vind je een oplijsting van de huidige en voorbije issues & onderhoudssessies"
@@ -13,4 +13,3 @@ en:
       last_updated:  "Laatst bijgewerkt"
       due_to_start: "Geplande start"
       due_to_finish: "Gepland einde"
-        
