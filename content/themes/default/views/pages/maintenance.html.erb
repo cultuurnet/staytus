@@ -40,7 +40,7 @@
       </p>
       <p class='issueUpdates__meta'>
         Gemeld op <%= time_tag update.created_at%>
-        <% if update.user %>by <%= update.user.name %><% end %>
+        <% if update.user %>door <%= update.user.name %><% end %>
       </p>
     </div>
     <% end %>
