@@ -15,7 +15,7 @@
   <% end %>
 
   <h1 class='issueDetail__title'><%= @maintenance.title %></h1>
-  <p class='issueDetail__date'>Gepland op <%= @maintenance.start_at.strftime("%A #{@maintenance.start_at.day.ordinalize} %B %Y om %H:%M (#{site.time_zone})") %></p>
+  <p class='issueDetail__date'>Scheduled for <%= @maintenance.start_at.strftime("%A #{@maintenance.start_at.day.ordinalize} %B %Y at %H:%M (#{site.time_zone})") %></p>
   <p class='issueDetail__descriptionTitle'>Omschrijving</p>
   <p class='issueDetail__description'><%= @maintenance.description %></p>
 
@@ -39,8 +39,8 @@
         <%= update.text %>
       </p>
       <p class='issueUpdates__meta'>
-        Gemeld <%= time_tag update.created_at%>
-        <% if update.user %>door <%= update.user.name %><% end %>
+        Posted <%= time_tag update.created_at%>
+        <% if update.user %>by <%= update.user.name %><% end %>
       </p>
     </div>
     <% end %>
